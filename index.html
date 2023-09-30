@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <h1>Tik Tak Toe</h1>
+        </ul>
+        <div class="toggle">
+            <div class="ball"></div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="game">
+            <div class="box br bb"><span class="text"></span></div>
+            <div class="box bl bb br"><span class="text"></span></div>
+            <div class="box bb bl"><span class="text"></span></div>
+            <div class="box br bt bb"><span class="text"></span></div>
+            <div class="box bl bb br bt"><span class="text"></span></div>
+            <div class="box bl bt bb"><span class="text"></span></div>
+            <div class="box bt br"><span class="text"></span></div>
+            <div class="box bl bt br"><span class="text"></span></div>
+            <div class="box bl bt"><span class="text"></span></div>
+        </div>
+        <div class="info">
+            <h1>Welcom To My Tic TacToe Game</h1>
+            <p id="result"><span id="moves">Turn for X</span></p>
+            <button id="reset" onclick="resetBtn()">Reset</button>
+            <img src="yB.gif" id="img-gif">
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

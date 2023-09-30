@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@500&family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+nav{
+    /* height: 10%; */
+    width: 100vw;
+    background-color: #ffa3a3;
+    color: #fff;
+    padding: 10px;
+    position: relative;
+}
+nav ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul h1{
+    font-size: 40px;
+    height: 100%;
+}
+.toggle{
+    width: 15vmin;
+    background-color: #b6b6b6;
+    position: absolute;
+    right: 5vw;
+    top: 25%;
+    border-radius: 24px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding:2px;
+}
+.ball{
+    height: 6vmin;
+    width: 6vmin;
+    background-color: black;
+    border-radius: 50%;
+}
+.container{
+    height: 90%;
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.game{
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw);
+    
+}
+
+.game .box{
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box:hover{
+    background-color: rgb(229, 211, 241);
+}
+.box>span{
+    width: 80%;
+    height: 80%;
+    font-size: 9vw;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2vw;
+}
+.info{
+    margin-left: 10px;
+    padding: 0 15px;
+}
+.info h1{
+    font-size: 20px;
+    border-bottom: 2px solid black;
+}
+
+.br{
+    border-right: 1px solid black;
+}
+.bt{
+    border-top: 1px solid black;
+}
+.bl{
+    border-left: 1px solid black;
+}
+.bb{
+    border-bottom: 1px solid black;
+}
+
+#result{
+    display: inline;
+}
+
+#reset{
+    margin: 10px;
+}
+
+#reset{
+    padding: 0px 15px;
+    border: none;
+    background-color: rgb(61, 59, 59);
+    border-radius: 10px;
+    font-size: 1rem;
+    color: #fff;
+    transition: all 0.3s;
+}
+#reset:hover{
+    box-shadow: 0 0 4px 2px rgba(0,0,112,0.6);
+}
+
+#img-gif{
+    display: block;
+    width: 0;
+    transition: width 0.4s;
+}
+
+@media only screen and (max-width:600px) {
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        flex-direction: column;
+    }
+    .game{
+        margin-bottom: 5vh;
+    }
+}
